@@ -2,466 +2,471 @@
 import HealthKit
 
 @available(iOS 8, macOS 13, watchOS 2, *)
+fileprivate func healthKitType(_ type: HKQuantityTypeIdentifier) -> HKQuantityType? {
+    .quantityType(forIdentifier: type)
+}
+
+@available(iOS 8, macOS 13, watchOS 2, *)
 public extension HKQuantityType {
     static func activeEnergyBurned() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .activeEnergyBurned)
+        healthKitType(.activeEnergyBurned)
     }
     
     static func basalEnergyBurned() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .basalEnergyBurned)
+        healthKitType(.basalEnergyBurned)
     }
     
     static func bloodAlcoholContent() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .bloodAlcoholContent)
+        healthKitType(.bloodAlcoholContent)
     }
     
     static func bloodGlucose() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .bloodGlucose)
+        healthKitType(.bloodGlucose)
     }
     
     static func bloodPressureDiastolic() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .bloodPressureDiastolic)
+        healthKitType(.bloodPressureDiastolic)
     }
     
     static func bloodPressureSystolic() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .bloodPressureSystolic)
+        healthKitType(.bloodPressureSystolic)
     }
     
     static func bodyFatPercentage() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .bodyFatPercentage)
+        healthKitType(.bodyFatPercentage)
     }
     
     static func bodyMass() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .bodyMass)
+        healthKitType(.bodyMass)
     }
     
     static func bodyMassIndex() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .bodyMassIndex)
+        healthKitType(.bodyMassIndex)
     }
     
     static func bodyTemperature() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .bodyTemperature)
+        healthKitType(.bodyTemperature)
     }
     
     static func dietaryBiotin() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryBiotin)
+        healthKitType(.dietaryBiotin)
     }
     
     static func dietaryCaffeine() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryCaffeine)
+        healthKitType(.dietaryCaffeine)
     }
     
     static func dietaryCalcium() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryCalcium)
+        healthKitType(.dietaryCalcium)
     }
     
     static func dietaryCarbohydrates() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryCarbohydrates)
+        healthKitType(.dietaryCarbohydrates)
     }
     
     static func dietaryChloride() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryChloride)
+        healthKitType(.dietaryChloride)
     }
     
     static func dietaryCholesterol() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryCholesterol)
+        healthKitType(.dietaryCholesterol)
     }
     
     static func dietaryChromium() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryChromium)
+        healthKitType(.dietaryChromium)
     }
     
     static func dietaryCopper() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryCopper)
+        healthKitType(.dietaryCopper)
     }
     
     static func dietaryEnergyConsumed() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryEnergyConsumed)
+        healthKitType(.dietaryEnergyConsumed)
     }
     
     static func dietaryFatMonounsaturated() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryFatMonounsaturated)
+        healthKitType(.dietaryFatMonounsaturated)
     }
     
     static func dietaryFatPolyunsaturated() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryFatPolyunsaturated)
+        healthKitType(.dietaryFatPolyunsaturated)
     }
     
     static func dietaryFatSaturated() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryFatSaturated)
+        healthKitType(.dietaryFatSaturated)
     }
     
     static func dietaryFatTotal() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryFatTotal)
+        healthKitType(.dietaryFatTotal)
     }
     
     static func dietaryFiber() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryFiber)
+        healthKitType(.dietaryFiber)
     }
     
     static func dietaryFolate() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryFolate)
+        healthKitType(.dietaryFolate)
     }
     
     static func dietaryIodine() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryIodine)
+        healthKitType(.dietaryIodine)
     }
     
     static func dietaryIron() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryIron)
+        healthKitType(.dietaryIron)
     }
     
     static func dietaryMagnesium() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryMagnesium)
+        healthKitType(.dietaryMagnesium)
     }
     
     static func dietaryManganese() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryManganese)
+        healthKitType(.dietaryManganese)
     }
     
     static func dietaryMolybdenum() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryMolybdenum)
+        healthKitType(.dietaryMolybdenum)
     }
     
     static func dietaryNiacin() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryNiacin)
+        healthKitType(.dietaryNiacin)
     }
     
     static func dietaryPantothenicAcid() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryPantothenicAcid)
+        healthKitType(.dietaryPantothenicAcid)
     }
     
     static func dietaryPhosphorus() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryPhosphorus)
+        healthKitType(.dietaryPhosphorus)
     }
     
     static func dietaryPotassium() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryPotassium)
+        healthKitType(.dietaryPotassium)
     }
     
     static func dietaryProtein() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryProtein)
+        healthKitType(.dietaryProtein)
     }
     
     static func dietaryRiboflavin() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryRiboflavin)
+        healthKitType(.dietaryRiboflavin)
     }
     
     static func dietarySelenium() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietarySelenium)
+        healthKitType(.dietarySelenium)
     }
     
     static func dietarySodium() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietarySodium)
+        healthKitType(.dietarySodium)
     }
     
     static func dietarySugar() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietarySugar)
+        healthKitType(.dietarySugar)
     }
     
     static func dietaryThiamin() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryThiamin)
+        healthKitType(.dietaryThiamin)
     }
     
     static func dietaryVitaminA() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryVitaminA)
+        healthKitType(.dietaryVitaminA)
     }
     
     static func dietaryVitaminB6() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryVitaminB6)
+        healthKitType(.dietaryVitaminB6)
     }
     
     static func dietaryVitaminB12() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryVitaminB12)
+        healthKitType(.dietaryVitaminB12)
     }
     
     static func dietaryVitaminD() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryVitaminD)
+        healthKitType(.dietaryVitaminD)
     }
     
     static func dietaryVitaminE() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryVitaminE)
+        healthKitType(.dietaryVitaminE)
     }
     
     static func dietaryVitaminK() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryVitaminK)
+        healthKitType(.dietaryVitaminK)
     }
     
     static func dietaryZinc() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryZinc)
+        healthKitType(.dietaryZinc)
     }
     
     static func distanceCycling() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .distanceCycling)
+        healthKitType(.distanceCycling)
     }
     
     static func distanceWalkingRunning() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .distanceWalkingRunning)
+        healthKitType(.distanceWalkingRunning)
     }
     
     static func electrodermalActivity() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .electrodermalActivity)
+        healthKitType(.electrodermalActivity)
     }
     
     static func flightsClimbed() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .flightsClimbed)
+        healthKitType(.flightsClimbed)
     }
     
     static func forcedExpiratoryVolume1() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .forcedExpiratoryVolume1)
+        healthKitType(.forcedExpiratoryVolume1)
     }
     
     static func forcedVitalCapacity() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .forcedVitalCapacity)
+        healthKitType(.forcedVitalCapacity)
     }
     
     static func heartRate() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .heartRate)
+        healthKitType(.heartRate)
     }
     
     static func height() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .height)
+        healthKitType(.height)
     }
     
     static func inhalerUsage() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .inhalerUsage)
+        healthKitType(.inhalerUsage)
     }
     
     static func leanBodyMass() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .leanBodyMass)
+        healthKitType(.leanBodyMass)
     }
     
     static func nikeFuel() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .nikeFuel)
+        healthKitType(.nikeFuel)
     }
     
     static func numberOfTimesFallen() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .numberOfTimesFallen)
+        healthKitType(.numberOfTimesFallen)
     }
     
     static func oxygenSaturation() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .oxygenSaturation)
+        healthKitType(.oxygenSaturation)
     }
     
     static func peakExpiratoryFlowRate() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .peakExpiratoryFlowRate)
+        healthKitType(.peakExpiratoryFlowRate)
     }
     
     static func peripheralPerfusionIndex() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .peripheralPerfusionIndex)
+        healthKitType(.peripheralPerfusionIndex)
     }
     
     static func respiratoryRate() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .respiratoryRate)
+        healthKitType(.respiratoryRate)
     }
     
     static func stepCount() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .stepCount)
+        healthKitType(.stepCount)
     }
 } // iOS 8, macOS 13, watchOS 2
 
 @available(iOS 9, macOS 13, watchOS 2, *)
 public extension HKQuantityType {
     static func basalBodyTemperature() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .basalBodyTemperature)
+        healthKitType(.basalBodyTemperature)
     }
     
     static func dietaryWater() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .dietaryWater)
+        healthKitType(.dietaryWater)
     }
     
     static func uvExposure() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .uvExposure)
+        healthKitType(.uvExposure)
     }
 }
 
 @available(iOS 9.3, macOS 13, watchOS 2.2, *)
 public extension HKQuantityType {
     static func appleExerciseTime() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .appleExerciseTime)
+        healthKitType(.appleExerciseTime)
     }
 }
 
 @available(iOS 10, macOS 13, watchOS 3, *)
 public extension HKQuantityType {
     static func distanceSwimming() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .distanceSwimming)
+        healthKitType(.distanceSwimming)
     }
     
     static func distanceWheelchair() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .distanceWheelchair)
+        healthKitType(.distanceWheelchair)
     }
     
     static func pushCount() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .pushCount)
+        healthKitType(.pushCount)
     }
     
     static func swimmingStrokeCount() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .swimmingStrokeCount)
+        healthKitType(.swimmingStrokeCount)
     }
 }
 
 @available(iOS 11, macOS 13, watchOS 4, *)
 public extension HKQuantityType {
     static func heartRateVariabilitySDNN() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .heartRateVariabilitySDNN)
+        healthKitType(.heartRateVariabilitySDNN)
     }
     
     static func insulinDelivery() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .insulinDelivery)
+        healthKitType(.insulinDelivery)
     }
     
     static func restingHeartRate() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .restingHeartRate)
+        healthKitType(.restingHeartRate)
     }
     
     static func waistCircumference() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .waistCircumference)
+        healthKitType(.waistCircumference)
     }
     
     static func walkingHeartRateAverage() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .walkingHeartRateAverage)
+        healthKitType(.walkingHeartRateAverage)
     }
 }
 
 @available(iOS 11.2, macOS 13, watchOS 4.2, *)
 public extension HKQuantityType {
     static func distanceDownhillSnowSports() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .distanceDownhillSnowSports)
+        healthKitType(.distanceDownhillSnowSports)
     }
 }
 
 @available(iOS 13, macOS 13, watchOS 6, *)
 public extension HKQuantityType {
     static func appleStandTime() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .appleStandTime)
+        healthKitType(.appleStandTime)
     }
     
     static func environmentalAudioExposure() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .environmentalAudioExposure)
+        healthKitType(.environmentalAudioExposure)
     }
     
     static func headphoneAudioExposure() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .headphoneAudioExposure)
+        healthKitType(.headphoneAudioExposure)
     }
 }
 
 @available(iOS 14, macOS 13, watchOS 7, *)
 public extension HKQuantityType {
     static func sixMinuteWalkTestDistance() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .sixMinuteWalkTestDistance)
+        healthKitType(.sixMinuteWalkTestDistance)
     }
     
     static func stairAscentSpeed() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .stairAscentSpeed)
+        healthKitType(.stairAscentSpeed)
     }
     
     static func stairDescentSpeed() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .stairDescentSpeed)
+        healthKitType(.stairDescentSpeed)
     }
     
     static func walkingAsymmetryPercentage() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .walkingAsymmetryPercentage)
+        healthKitType(.walkingAsymmetryPercentage)
     }
     
     static func walkingDoubleSupportPercentage() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .walkingDoubleSupportPercentage)
+        healthKitType(.walkingDoubleSupportPercentage)
     }
     
     static func walkingSpeed() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .walkingSpeed)
+        healthKitType(.walkingSpeed)
     }
     
     static func walkingStepLength() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .walkingStepLength)
+        healthKitType(.walkingStepLength)
     }
 }
 
 @available(iOS 14.5, macOS 13, watchOS 7.4, *)
 public extension HKQuantityType {
     static func appleMoveTime() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .appleMoveTime)
+        healthKitType(.appleMoveTime)
     }
 }
 
 @available(iOS 15, macOS 13, watchOS 8, *)
 public extension HKQuantityType {
     static func appleWalkingSteadiness() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .appleWalkingSteadiness)
+        healthKitType(.appleWalkingSteadiness)
     }
     
     static func numberOfAlcoholicBeverages() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .numberOfAlcoholicBeverages)
+        healthKitType(.numberOfAlcoholicBeverages)
     }
 }
 
 @available(iOS 16, macOS 13, watchOS 9, *)
 public extension HKQuantityType {
     static func appleSleepingWristTemperature() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .appleSleepingWristTemperature)
+        healthKitType(.appleSleepingWristTemperature)
     }
     
     static func atrialFibrillationBurden() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .atrialFibrillationBurden)
+        healthKitType(.atrialFibrillationBurden)
     }
     
     static func environmentalSoundReduction() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .environmentalSoundReduction)
+        healthKitType(.environmentalSoundReduction)
     }
     
     static func runningGroundContactTime() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .runningGroundContactTime)
+        healthKitType(.runningGroundContactTime)
     }
     
     static func runningPower() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .runningPower)
+        healthKitType(.runningPower)
     }
     
     static func runningSpeed() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .runningSpeed)
+        healthKitType(.runningSpeed)
     }
     
     static func runningStrideLength() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .runningStrideLength)
+        healthKitType(.runningStrideLength)
     }
     
     static func runningVerticalOscillation() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .runningVerticalOscillation)
+        healthKitType(.runningVerticalOscillation)
     }
     
     static func underwaterDepth() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .underwaterDepth)
+        healthKitType(.underwaterDepth)
     }
     
     static func waterTemperature() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .waterTemperature)
+        healthKitType(.waterTemperature)
     }
 }
 
 @available(iOS 17, macOS 14, watchOS 10, *)
 public extension HKQuantityType {
     static func cyclingCadence() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .cyclingCadence)
+        healthKitType(.cyclingCadence)
     }
     
     static func cyclingFunctionalThresholdPower() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .cyclingFunctionalThresholdPower)
+        healthKitType(.cyclingFunctionalThresholdPower)
     }
     
     static func cyclingPower() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .cyclingPower)
+        healthKitType(.cyclingPower)
     }
     
     static func cyclingSpeed() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .cyclingSpeed)
+        healthKitType(.cyclingSpeed)
     }
     
     static func physicalEffort() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .physicalEffort)
+        healthKitType(.physicalEffort)
     }
     
     static func timeInDaylight() -> HKQuantityType? {
-        self.quantityType(forIdentifier: .timeInDaylight)
+        healthKitType(.timeInDaylight)
     }
 }
 #endif
