@@ -306,14 +306,15 @@ public extension HKQuantityType {
     }
 }
 
+@available(iOS 15, macCatalyst 15, macOS 13, watchOS 8, *)
+public extension HKQuantityType {
+    static let insulinDelivery = HKQuantityType(.insulinDelivery)
+}
+
 @available(iOS 11, macOS 13, watchOS 4, *)
 public extension HKQuantityType {
     static func heartRateVariabilitySDNN() -> HKQuantityType? {
         healthKitType(.heartRateVariabilitySDNN)
-    }
-    
-    static func insulinDelivery() -> HKQuantityType? {
-        healthKitType(.insulinDelivery)
     }
     
     static func restingHeartRate() -> HKQuantityType? {
