@@ -1,1 +1,1 @@
-# HealthKit
+# HealthyKit
