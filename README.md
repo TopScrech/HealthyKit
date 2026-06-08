@@ -4,5 +4,5 @@ HealthKit wrapper that adds convenience APIs for common `HKQuantityType`, `HKUni
 
 ## Supported platforms
 - iOS 12+
-- watchOS 4+
+- watchOS 9+
 - macOS 13+
