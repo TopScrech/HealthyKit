@@ -6,7 +6,7 @@ let package = Package(
     name: "HealthyKit",
     platforms: [
         .iOS(.v12),
-        .watchOS(.v5),
+        .watchOS(.v9),
         .macOS(.v13)
     ],
     products: [
